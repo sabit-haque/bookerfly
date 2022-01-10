@@ -15,7 +15,9 @@ a:link { color: #567ec4; border-bottom-color: #567ec4;}
 
 a:visited { color: #81a2c3; border-bottom-color: #81a2c3; }
 
-a:hover, a:active { color: #cc3333; border-bottom-style: solid; border-bottom-color: #cc3333; }
+a:hover, a:active { color: #cc3333; border-bottom-style: solid; }
+
+a:link { color: white; border-bottom-style: solid; }
 
 /* Headings */
 
@@ -23,13 +25,18 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 10px 0 15px; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: normal; border-bottom-width: 0; }
 
-h1 { font-size: 32px; }
+h1 { font-size: 56px; }
 
-h2 { font-size: 28px; }
+h2 { font-size: 48px; }
 
-h3 { font-size: 24px; }
+h3 { font-size: 40px; }
 
-h4, h5, h6 { font-size: 20px; }
+h4 { font-size: 32px; }
+
+h5 { font-size: 24px; }
+
+h6 { font-size: 16px; }
+
 
 /* Lists */
 
@@ -118,9 +125,22 @@ body { }
 
 #content { float: left; padding: 20px 0; }
 
+#conmid { float: center; padding: 20px 0; }
+
+#buy { float: right; padding: 20px 0; }
+
 #footer 
 { 
 	float: left; 
+	clear: both; 
+	width: 100%; 
+	color: #999999;
+	background-color: #363633; 
+}
+
+#feeter 
+{ 
+	float: center; 
 	clear: both; 
 	width: 100%; 
 	color: #999999;
@@ -186,6 +206,14 @@ a.dropshadow:hover, a.dropshadow:active { background-color: #eeeeee; }
 	width: 25%;
 	float: left;
 	margin: 10px 50px 0;
+}
+
+#mata div
+{ 
+	padding: 0;
+	width: 100%;
+	float: center;
+	margin: 10px 100px 0;
 }
 
 #meta h3 

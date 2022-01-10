@@ -17,52 +17,44 @@
 
 
 <body>
+  <!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div id="header">
-  <h1><a href="#00">BOOKERFLY</a></h1>
-</div>
-
-<div id="navigation">
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="bookmark.html">Bookmark</a></li>
-    <li><a href="genere%20-%20aa.html">Genere</a></li>
-    <li><a href="sign-up.html">Sign-up</a></li>
-    <li class="active"><a href="sign-in.html">Sign-in</a></li>
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      
-    </form>
-  </ul>
+  <h1><a href="home.html"><i class="fa fa-book" aria-hidden="true"></i> BOOKERFLY</a></h1>
 </div>
 
 
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="images/icon2.jpg" alt="Avatar" class="avatar">
-  </div>
+<div class="bg-img">
+  <form action="action_page.php" class="regform" method="post">
+    <div class="imgcontainer">
+      <img src="images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <div class="container signin">
+      <p>Don't have an account? <a href="sign-up.html">Sign up</a>.</p>
+    </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-  <div class="container signin">
-    <p>Don't have an account? <a href="sign-up.html">Sign up</a>.</p>
-  </div>
-</form>
+  </form>
+</div>
   
 </body>
 </html>

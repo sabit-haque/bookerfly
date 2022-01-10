@@ -17,38 +17,50 @@
 
 
 <body>
+ <!-- Load an icon library -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div id="header">
-  <h1><a href="#00">BOOKERFLY</a></h1>
-</div>
+ <div id="header">
+   <h1><a href="home.html"><i class="fa fa-book" aria-hidden="true"></i> BOOKERFLY</a></h1>
+ </div>
+ <div class="bg-img">
+  
+  <div id="navigation">
+    <ul>
+      <li><a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+      <li><a href="bookmark.html"><i class="fa fa-fw fa-bookmark"></i>Bookmark</a></li>
+      <li><a href="genere%20-%20aa.html"><i class="fa fa-fw fa-bars"></i>Genere</a></li>
+      <li class="active"><a href="user_id.html"><i class="fa fa-fw fa-user"></i>User_id</a></li>
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </ul>
+  </div>
+  
+  <div>
+    <form action="action_page.php" class="regformo" method="post">
+      <hr>
+      <hr>
+      <hr>
+      <div class="imgcontainer">
+        <img src="images/avatar.png" alt="Avatar" class="avatar">
+      </div>
 
-<div id="navigation">
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="bookmark.html">Bookmark</a></li>
-    <li><a href="genere%20-%20aa.html">Genere</a></li>
-    <li class="active"><a href="user_id.html">User_id</a></li>
-    <input type="text" placeholder="Search..">
-  </ul>
-</div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Username" name="uname" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Email" name="email" id="email" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Password" name="psw" required>
+      </div>
 
-<form action="action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="images/icon2.jpg" alt="Avatar" class="avatar">
+      <div class="container"><a class="psw">Change <a href="#">password?</a></div>
+
+    </form>
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Username" name="uname" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Email" name="email" id="email" required>
-      
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Password" name="psw" required>
-
-  </div>
+</div>
 
 </body>
 </html>

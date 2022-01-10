@@ -17,45 +17,101 @@
 
 
 <body>
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <div id="header">
-  <h1><a href="#00">BOOKERFLY</a></h1>
+  <h1><a href="home.html"><i class="fa fa-book" aria-hidden="true"></i> BOOKERFLY</a></h1>
 </div>
 
 <div id="navigation">
   <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="bookmark.html">Bookmark</a></li>
-    <li class="active"><a href="genere%20-%20aa.html">Genere</a></li>
-    <li><a href="user_id.html">User_id</a></li>
-    <input type="text" placeholder="Search..">
+    <li><a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+    <li><a href="bookmark.html"><i class="fa fa-fw fa-bookmark"></i>Bookmark</a></li>
+    <li class="active"><a href="genere%20-%20aa.html"><i class="fa fa-fw fa-bars"></i>Genere</a></li>
+    <li><a href="user_id.html"><i class="fa fa-fw fa-user"></i>User_id</a></li>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
   </ul>
 </div>
 
 <div id="content-wrapper">
   <div id="content">
     <p><a href="books/sample.pdf" class="drop-shadow"><img src="images/adventure.jpg" width="100" height="150" alt="adventure" class="captionated" /></a></p>
-    <h1>SEA VOYAGER</h1>
-    <p>
-      This paragraph containing description 
-      of the book with a lot of lines
-      in the source code,
-      but the browser
-      ignores it.
-      </p>
       
-      <p>
-      This paragraph
-      containing             description
-         of    the book with    
-           a lot of spaces
-      in the source         code,
-      but the        browser
-      ignores it.
-      </p>
+<h1>SEA VOYAGER</h1>
+
+<div>
+<h2><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span></h2>
+</div>
+
+<!-- Auto width -->
+<a href="books/sample.pdf" download>
+<button href="books/sample.pdf" class="dld"><i class="fa fa-download"></i> Download</button></a>
+
+    <p>
+      The play opens on a ship at sea, caught in a storm; 
+      the ship's Master and sailors struggle to cope, while the vessel's commander and passengers 
+      make their way on deck. Albert, a French pirate, is the captain; 
+      he is accompanied by a heterogeneous group of compatriots, including Lamur, a "usuring Merchant," 
+      Franville, "a vain-glorious gallant," and Morillat, "a shallow-brain'd Gentleman." 
+      Also present are the captain's friend Tibalt, and his love interest, Aminta. 
+      Aminta was captured by Albert, but he has since fallen in love with her, and respects her virtue and chastity. 
+      He also set out in search of her missing brother Raimond, before the storm struck.
+    </p>
+    <p>
+      The ship struggles to reach a nearby island; 
+      the crew toss overboard cargo, belongings, even treasure, in an attempt to lighten the load. 
+      The second scene shifts perspective to two men stranded on the same island. 
+      Two Portuguese castaways, Sebastian and his nephew Nicusa, have long suffered privation on this barren rocky island; 
+      they watch as the ship endures the storm, and they see the survivors make their way to the beach. 
+      Their conversation reveals that they were victims of a pirate attack, 
+      which divided them from another Portuguese ship that carried Sebastian's wife and other members of their family.
+    </p>
+  </div>
+  
+  <div>
+    <form action="/action_page.php" id="usrform">
+      <textarea name="comment" form="usrform" placeholder="Top Reviews" ></textarea>
+      
+    </form>
+
+    <div class="d-flex flex-column comment-section">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      
+      <div class="bg-light p-2">
+        <div class="d-flex flex-row align-items-start">
+          <img class="rounded-circle" src="images/avatar.png" width="40">
+          <textarea class="form-control ml-1 shadow-none textarea"></textarea>
+        </div>
+        <div class="mt-2 text-right">
+          <div><button class="btn btn-primary btn-sm shadow-none" type="button">Post Review</button></div>
+          <div><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+        </div>
+      </div>
+    </div>
+      </div>
 
   </div>
+
+ 
+
+<div id="footer">
+  <div id="buy">
+    <div id="meta" >
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="sabithaque" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    </div>
+  </div>
 </div>
+
 
 </body>
 </html>
