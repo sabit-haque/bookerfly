@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 10px 0 15px; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: normal; border-bottom-width: 0; }
 
-h1 { font-size: 56px; }
+h1 { font-size: 56px; color: skyblue; }
 
 h2 { font-size: 48px; }
 
@@ -35,7 +35,7 @@ h4 { font-size: 32px; }
 
 h5 { font-size: 24px; }
 
-h6 { font-size: 16px; }
+h6 { font-size: 56px; }
 
 
 /* Lists */

@@ -5,25 +5,6 @@
 #meta .authors { width: 20%; }
 
 
-/*image shaking*/
-img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 
 
 /* Pagination links */
@@ -194,11 +175,11 @@ hr {
 /* Sign up & Sign in button */
 .sign-btn {
 
-  border: 2px solid black;
+  border: 0px;
   background-color: #0000;
   color: white;
-  padding: 14px 28px;
-  font-size: 24px;
+  padding: auto;
+  font-size: 17px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -280,7 +261,7 @@ a:link { color: white; border-bottom-style: solid; }
   background-color: #808080;
 }
 
-/* Full-width input fields */
+/* Full-width fields */
   input[type=text], input[type=password] {
   width: 100%;
   padding: 5px;
@@ -353,8 +334,8 @@ input[type=text], input[type=password] {
 button {
   background-color: #73a340;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 10px 10px;
+  margin: 0px 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -429,18 +410,19 @@ span.psw {
 }
 
 
-
+/*for genere*/
 .cards{
   height: 300px;
   display: flex;
-  flex-wrap: wrap;
   
-  --distance: -4rem;
+  
+  --distance: -7.38rem;
 }
+
 .card{
-  background: #808080;
-  border-radious: 1rem;
-  padding: 2rem;
+  background: #111111;
+  border-radius: 1rem;
+  padding: 1rem;
   box-shadow: 4px 4px 12px 2px rgba(black, 0.8);
   transition: 0.2s;
 }
@@ -451,17 +433,55 @@ span.psw {
 .card:hover,
 .card:focus-within{
   
-  transform: translateY(-1rem);
+  transform: translateX(1rem);
 }
 .card:hover ~.card, 
 .card:focus-within ~.card {
   
-  transform: translateY(calc(var(--distance)*-1);
+  transform: translateY(calc(var(--distance)*-1));
 }
 
 
+
+
+/*for transition*/
+.cardts{
+  height: 300px;
+  display: flex;
+  
+  
+  --distance: 0rem;
+}
+
+.cardt{
+  background: #111111;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 12px 2px rgba(black, 0.8);
+  transition: 0.2s;
+}
+.cardt:not(first-child){
+  margin-right: var(--distance); 
+  
+}
+.cardt:hover,
+.cardt:focus-within{
+  
+  transform: translateX(1rem);
+}
+.cardt:hover ~.cardt, 
+.cardt:focus-within ~.cardt {
+  
+  transform: translateY(calc(var(--distance)*-1));
+}
+
+
+
+
+
+
 /* Style download button */
-.dld {
+.dld{
   background-color: DodgerBlue;
   border: none;
   width: 240px;
@@ -472,12 +492,12 @@ span.psw {
 }
 
 /* Darker background on mouse-over */
-.btn:hover {
+.btn:hover{
   background-color: RoyalBlue;
 }
 
 
 /*star rating*/
-.checked {
+.checked{
   color: orange;
 }
